@@ -1,0 +1,43 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px 0;
+  transition: padding 0.3s ease;
+}
+
+.navigation ul,
+.navigation ul li {
+  margin: 0;
+}
+
+.navigation ul li a {
+  @apply font-barlow;
+  color: var(--color-text);
+  font-size: var(--font-navigation);
+  font-weight: 800;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: stretch;
+  gap: 0 48px;
+  height: 100%;
+  flex: 1;
+  justify-content: center;
+}
+
+.navigation ul li {
+  display: flex;
+  align-items: stretch;
+}
+
+.navigation__cta {
+  flex-shrink: 0;
+}

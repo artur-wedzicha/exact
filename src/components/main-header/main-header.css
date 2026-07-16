@@ -1,0 +1,34 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.main-header .logo {
+  width: 240px;
+}
+
+.main-header.sticky {
+  padding: 0;
+  background: var(--color-white);
+}
+
+.main-header.sticky .navigation {
+  padding: 12px 0;
+}
+
+.main-header.sticky .logo {
+  width: 240px;
+  bottom: 0;
+  top: 0;
+  left: 16px;
+  margin: auto;
+}

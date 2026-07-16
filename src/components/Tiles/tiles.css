@@ -1,0 +1,9 @@
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.tile-wrapper a {
+  color: var(--primary-text);
+}

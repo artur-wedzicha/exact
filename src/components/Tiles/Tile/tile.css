@@ -1,0 +1,21 @@
+.tile {
+  border: 1px solid var(--color-lines);
+  box-shadow: var(--box-shadow);
+  padding: 24px;
+}
+
+.tile__title {
+  height: 108px;
+}
+
+.tile__description {
+  min-height: 64px;
+}
+
+.tile.tile--noborder{
+  border: none;
+}
+
+.tile h3 {
+  font-size: var(--font-tile-header);
+}

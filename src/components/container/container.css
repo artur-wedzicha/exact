@@ -1,0 +1,32 @@
+/* src/styles/container.css */
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  /* Breakpoints (jak w MUI) */
+  max-width: 100%;
+
+  @media (min-width: 600px) {
+    max-width: 600px;
+  }
+
+  @media (min-width: 900px) {
+    max-width: 900px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  @media (min-width: 1536px) {
+    max-width: 1536px;
+  }
+
+  @media (min-width: 1920px) {
+    max-width: 1800px
+  }
+}

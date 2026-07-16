@@ -1,0 +1,11 @@
+.assortment {
+  color: var(--color-text);
+}
+
+.assortment p{
+  color: var(--color-secondary-text);
+}
+
+.assortment__thumb {
+  min-height: 320px;
+}

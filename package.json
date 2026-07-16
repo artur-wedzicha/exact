@@ -1,0 +1,69 @@
+{
+  "name": "exact-gatsby-tailwind",
+  "private": true,
+  "description": "Exact – usługi koparką i prace ziemne",
+  "version": "1.0.0",
+  "author": "Exact",
+  "keywords": [
+    "gatsby",
+    "tailwind",
+    "koparka",
+    "usługi ziemne"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop -p 5000",
+    "start": "gatsby develop -p 5000",
+    "build": "gatsby build",
+    "serve": "gatsby serve -p 5000",
+    "preview": "gatsby clean && gatsby build && gatsby serve -p 5000",
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "lighthouse": "lighthouse http://localhost:2000 --view",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "gatsby": "^5.14.3",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-image": "^3.14.0",
+    "gatsby-plugin-manifest": "^5.14.0",
+    "gatsby-plugin-react-helmet": "^6.14.0",
+    "gatsby-plugin-sharp": "^5.14.0",
+    "gatsby-plugin-typescript": "^5.14.0",
+    "gatsby-plugin-utils": "^4.14.0",
+    "gatsby-plugin-webfonts": "^2.3.2",
+    "gatsby-source-filesystem": "^5.14.0",
+    "gatsby-transformer-sharp": "^5.14.0",
+    "lucide-react": "^0.488.0",
+    "react": "^18.2.0",
+    "react-18-image-lightbox": "^5.1.4",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.55.0",
+    "tailwind-merge": "^3.2.0",
+    "tailwind-variants": "^1.0.0",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "^1.2.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "gatsby-plugin-postcss": "^6.14.0",
+    "lighthouse": "^12.5.1",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^3.4.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

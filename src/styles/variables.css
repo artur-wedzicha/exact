@@ -1,0 +1,68 @@
+:root {
+  /* COLORS */
+  --color-bg: #fff;
+  --color-primary: #fbc115;
+  --color-hover: #aa937b;
+  --color-lines: #e0e0e0;
+  --color-primary-text: #19191a;
+  --color-secondary-text: #bababa;
+  --color-white: #fff;
+  --color-button-outline: rgba(251,193,21,0.35);
+  --color-footer-divider: rgba(25,25,26,0.12);
+  --color-shadow: rgba(0,0,0,0.05);
+  --color-error: #FF0000;
+
+  --box-shadow: 5px 5px 6px rgba(0,0,0,0.05);
+/* FONTS */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+  --font-h1: 80px;
+  --font-h2: 48px;
+  --font-h3: 40px;
+  --font-h4: 36px;
+  --font-h5: 24px;
+  --font-h6: 18px;
+  --font-text: 16px;
+  --font-label: 14px;
+  --font-button: 16px;
+  --font-navigation: 16px;
+  --font-tile-header: 28px;
+
+/* SIZES */
+  --button-height: 56px;
+
+/* OTHERS */
+  --border-radius: 16px;
+  --button-border-radius: 4px;
+
+
+
+
+  --color-text: #333;
+  --color-code-bg: #fff4db;
+  --color-code: #8a6534;
+
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+  "Courier New", monospace;
+
+  --font-lg: 18px;
+  --font-md: 16px;
+  --font-sm: 14px;
+  --font-sx: 12px;
+
+  --line-height-loose: 1.75;
+  --line-height-normal: 1.5;
+  --line-height-dense: 1.1;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 72px;
+
+  --size-content: 54rem;
+  --size-gutter: var(--space-5);
+  --size-gap: var(--space-6);
+}

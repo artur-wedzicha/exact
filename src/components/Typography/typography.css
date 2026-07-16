@@ -1,0 +1,36 @@
+.typography-h1 {
+  font-size: var(--font-h1);
+  font-weight: 800;
+}
+
+.typography-h2 {
+  font-size: var(--font-h2);
+  font-weight: 600;
+}
+
+.typography-h3 {
+  font-size: var(--font-h3);
+}
+
+.typography-h4 {
+  font-size: var(--font-h4);
+}
+
+.typography-h5 {
+  font-size: var(--font-h5);
+}
+
+.typography-text {
+  font-size: var(--font-text);
+}
+
+.typography-label {
+  font-size: var(--font-label);
+  font-weight: 500;
+}
+
+.typography-button {
+  font-size: var(--font-button);
+  font-weight: 600;
+  text-transform: uppercase;
+}
