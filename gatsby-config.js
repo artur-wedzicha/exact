@@ -1,10 +1,17 @@
 /** @type {import('gatsby').GatsbyConfig} */
+const isGithubPagesBuild = process.env.GATSBY_BUILD_TARGET === 'github-pages';
+const githubPagesPathPrefix = '/exact';
+const siteUrl = isGithubPagesBuild
+  ? `https://artur-wedzicha.github.io${githubPagesPathPrefix}`
+  : `https://exact-koparka.pl`;
+
 module.exports = {
+  pathPrefix: isGithubPagesBuild ? githubPagesPathPrefix : '',
   siteMetadata: {
     title: `Exact - Usługi koparką i prace ziemne`,
     description: `Profesjonalne usługi koparką i kompleksowe prace ziemne: wykopy, niwelacje, fundamenty, drogi, odwodnienia, układanie kostki oraz transport materiałów budowlanych.`,
     author: `@Exact`,
-    siteUrl: `https://exact-koparka.pl`,
+    siteUrl,
   },
   plugins: [
     'gatsby-plugin-postcss',
@@ -24,7 +31,7 @@ module.exports = {
       options: {
         name: `Exact`,
         short_name: `Exact`,
-        start_url: `/`,
+        start_url: isGithubPagesBuild ? `${githubPagesPathPrefix}/` : `/`,
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `minimal-ui`,

@@ -38,6 +38,8 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
 
+# exact
+
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🚀 Quick start (Netlify)
@@ -104,3 +106,11 @@ The fastest way to combine your favorite tools and APIs to build the fastest sit
 - Use project CSS variables instead of hardcoded static values whenever possible.
 - Prefer tokens such as `var(--border-radius)`, `var(--button-border-radius)`, `var(--color-primary)`, and existing font/spacing variables over inline fixed values like `12px`, `16px`, or raw hex colors.
 - In Tailwind arbitrary values, prefer variable-based forms such as `rounded-[var(--border-radius)]` instead of `rounded-[12px]`.
+
+## GitHub Pages
+
+- Production GitHub Pages build: `npm run build:pages`
+- Local preview with GitHub Pages prefix: `npm run serve:pages`
+- The repository is configured to publish under `/exact` only for the GitHub Pages build target.
+- In GitHub repository settings, set `Pages` -> `Source` to `GitHub Actions`.
+- If you later switch to a custom domain, remove the GitHub Pages build target and deploy without the `/exact` path prefix.
