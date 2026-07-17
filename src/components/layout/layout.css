@@ -11,8 +11,6 @@
 }
 
 .layout.layout--homepage main {
-  background-image: url("../../images/bg.webp");
-  /*background-image: url("../../images/bg7.png");*/
   background-position: center top;
   background-repeat: no-repeat;
 }

@@ -12,15 +12,27 @@ import '../../styles/global-tailwind.css';
 import MainHeader from '../main-header/main-header';
 import MainFooter from '../main-footer/main-footer';
 import { useLocation } from '@reach/router';
+import bgImage from '../../images/bg.webp';
 
 const Layout = ({children}) => {
   const location = useLocation();
-  const isHomePage = location.pathname === '/';
+  const pathPrefix = __PATH_PREFIX__ || '';
+  const normalizedPathname = pathPrefix
+    ? location.pathname.replace(pathPrefix, '') || '/'
+    : location.pathname;
+  const isHomePage = normalizedPathname === '/';
+  const homePageMainStyle = isHomePage
+    ? {
+        backgroundImage: `url(${bgImage})`,
+        backgroundPosition: 'center top',
+        backgroundRepeat: 'no-repeat',
+      }
+    : undefined;
 
   return (
     <div className={`layout ${isHomePage ? 'layout--homepage' : ''}`}>
       <MainHeader isHomePage={isHomePage}/>
-      <main className={`${!isHomePage ? 'pt-24' : ''}`}>
+      <main className={`${!isHomePage ? 'pt-24' : ''}`} style={homePageMainStyle}>
         {children}
       </main>
       <MainFooter/>
