@@ -22,6 +22,7 @@ const Slider = () => {
             variant="h1"
             className="mb-6 flex flex-col uppercase leading-[0.9] text-[var(--color-primary-text)]"
           >
+
             <span className="block">Siła.</span>
             <span className="block">Precyzja.</span>
             <span className="block text-[var(--color-primary)]">Termin.</span>
