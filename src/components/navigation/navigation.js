@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import { ArrowRight } from 'lucide-react';
+import {ArrowRight, PhoneCall} from 'lucide-react';
 import { routes } from '../../router/router';
 import './navigation.css';
 import { useLocation } from '@reach/router';
@@ -67,10 +67,11 @@ const Navigation = () => {
 
       <Link
         to={routes.contact.path}
-        className="button navigation__cta inline-flex items-center gap-3 text-[var(--color-primary-text)]"
+        className="button navigation__cta gap-3 text-[var(--color-primary-text)] "
       >
-        <span>Zapytaj o wycenę</span>
-        <ArrowRight size={22} strokeWidth={2.25} className="shrink-0" />
+        <PhoneCall size={20} strokeWidth={1.8} />
+        <span>537 202 251</span>
+        {/*<ArrowRight size={22} strokeWidth={2.25} className="shrink-0" />*/}
       </Link>
     </nav>
   );

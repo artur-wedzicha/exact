@@ -1,11 +1,13 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
-import { routes } from '../../router/router';
 import './button.css';
 
-const Button = ({children}) => {
+const Button = ({ children, className = '', type = 'button', ...rest }) => {
   return (
-    <button className="button">
+    <button
+      type={type}
+      className={`button ${className}`.trim()}
+      {...rest}
+    >
       {children}
     </button>
   )

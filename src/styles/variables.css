@@ -4,12 +4,15 @@
   --color-primary: #fbc115;
   --color-hover: #aa937b;
   --color-lines: #e0e0e0;
+  --color-form-border: #e7e2d8;
   --color-primary-text: #19191a;
   --color-secondary-text: #bababa;
+  --color-muted-text: #626262;
   --color-white: #fff;
   --color-button-outline: rgba(251,193,21,0.35);
   --color-footer-divider: rgba(25,25,26,0.12);
   --color-shadow: rgba(0,0,0,0.05);
+  --color-image-overlay-soft: rgba(25,25,26,0.16);
   --color-error: #FF0000;
 
   --box-shadow: 5px 5px 6px rgba(0,0,0,0.05);

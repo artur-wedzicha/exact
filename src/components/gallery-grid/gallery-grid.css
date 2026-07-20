@@ -1,8 +1,12 @@
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  auto-rows: 480px;
+  auto-rows: 400px;
   gap: 20px;
+}
+
+.gallery-grid__item {
+  height: 400px;
 }
 
 .gallery-grid__item > .gatsby-image-wrapper {

@@ -27,6 +27,7 @@ These rules apply to future AI-assisted changes in this project.
 - Keep component-specific layout and spacing close to the component in JSX via Tailwind classes.
 - Only introduce custom class names when they add real clarity or support a case Tailwind does not express well.
 - Keep `className` readable. Avoid long conditional class chains for simple layout details like separators, borders, or spacing when a simpler Tailwind structure or a small helper would be clearer.
+- Do not add section padding to compensate for width. Section width and horizontal gutters should come from the shared `Container`, not extra local padding on page sections, unless the design explicitly requires an inset panel.
 
 ## Feedback Loop
 
