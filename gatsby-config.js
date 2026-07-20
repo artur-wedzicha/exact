@@ -36,7 +36,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // Podmień na swoją ikonę
+        icon: `src/images/favicon.jpg`,
       },
     },
     {

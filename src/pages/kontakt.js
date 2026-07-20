@@ -4,21 +4,44 @@ import './index.css';
 
 import Layout from '../components/layout/layout';
 import Seo from '../components/seo';
-import SectionContact from '@/components/sections/contact/section-contact';
-import SectionAboutUs from '@/components/sections/about-us/about-us';
+import Container from '@/components/container/container';
+import Breadcrumbs from '@/components/breadcrumbs';
+import RealizationsContact from '@/components/realizations-contact';
 import Map from '@/components/map';
+import contactImage from '@/images/contact.png';
+import contactPageImage from '@/images/contact_page.jpg';
 
 export default function OfferPage() {
   return (
-    <Layout>
+    <Layout
+      mainStyle={{
+        backgroundImage: `url(${contactPageImage})`,
+        backgroundPosition: 'right top',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <Seo
-        title="Strona główna"
-        description="Witaj na mojej super stronie Gatsby!"
+        title="Kontakt"
+        description="Skontaktuj się z Exact. Odpowiadamy na pytania, przygotowujemy wyceny i pomagamy zaplanować realizację prac ziemnych oraz transportu."
       />
 
-      <SectionContact/>
+      <Container>
+        <div className="mt-24 pb-10">
+          <Breadcrumbs
+            items={[
+              { label: 'Strona główna', to: '/' },
+              { label: 'Kontakt' },
+            ]}
+          />
+        </div>
+
+        <RealizationsContact
+          imageSrc={contactImage}
+          imageAlt="Koparka Exact podczas prac ziemnych"
+        />
+      </Container>
+
       <Map />
-      <SectionAboutUs/>
     </Layout>
   );
 }

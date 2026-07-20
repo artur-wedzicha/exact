@@ -9,19 +9,19 @@ import './button/button.css';
 
 const galleryItems = [
   {
-    key: 'gallery1',
+    key: '719189926_1011090175201407_3036841626463715853_n',
     title: 'Budowa drogi dojazdowej',
     location: 'Kraków',
     year: '2024',
   },
   {
-    key: 'gallery2',
+    key: '656486062_944962248480867_7549960103650031739_n',
     title: 'Wykopy pod fundamenty',
     location: 'Wieliczka',
     year: '2024',
   },
   {
-    key: 'gallery3',
+    key: '720776632_1014718264838598_2815066638155342621_n',
     title: 'Utwardzanie terenu',
     location: 'Bochnia',
     year: '2024',
@@ -32,7 +32,7 @@ const Gallery = () => {
   const data = useStaticQuery(graphql`
     query GallerySectionImages {
       allFile(
-        filter: { relativeDirectory: { eq: "pages/homepage/gallery" } }
+        filter: { relativeDirectory: { regex: "/icons\\/gallery\\/[1-4]$/" } }
         sort: { name: ASC }
       ) {
         nodes {

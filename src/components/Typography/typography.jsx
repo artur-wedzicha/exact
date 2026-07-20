@@ -18,7 +18,7 @@ const Typography = ({ variant = "text", children, className = "", ...rest }) => 
   const combinedClassName = `${baseClass} ${className}`.trim();
 
   return (
-    <Component className={combinedClassName} >
+    <Component className={combinedClassName} {...rest}>
       {children}
     </Component>
   );

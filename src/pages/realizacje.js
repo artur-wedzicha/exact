@@ -4,39 +4,58 @@ import './index.css';
 
 import Layout from '../components/layout/layout';
 import Seo from '../components/seo';
-import Typography from '../components/Typography/typography';
 import GalleryGrid from '@/components/gallery-grid/gallery-grid';
-import SectionContact from '@/components/sections/contact/section-contact';
-import SectionAboutUs from '@/components/sections/about-us/about-us';
+import PageHeader from '@/components/pageheader';
+import Breadcrumbs from '@/components/breadcrumbs';
+import Container from '@/components/container/container';
+import RealizationsStats from '@/components/realizations-stats';
+import RealizationsContact from '@/components/realizations-contact';
+import realizationsPageImage from '@/images/realizations_page.jpg';
+import contactImage from '@/images/contact.png';
 
 export default function OfferPage() {
   return (
-    <Layout>
+    <Layout
+      mainStyle={{
+        backgroundImage: `url(${realizationsPageImage})`,
+        backgroundPosition: 'right top',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <Seo
-        title="Strona główna"
-        description="Witaj na mojej super stronie Gatsby!"
+        title="Realizacje"
+        description="Zobacz nasze realizacje w praktyce. Solidny sprzęt, doświadczenie i zaangażowanie w każdym projekcie."
       />
 
-      {/*<SectionAboutUs/>*/}
-      <section className={'mb-32'}>
-        <header className="text-left mb-24">
-          <Typography variant={'h2'} className="mb-6">
-            Realzacje
-          </Typography>
-          <Typography variant="p" className="text-wrap text-left">
-            Oferujemy kompleksowe usługi ziemne i koparkowe dostosowane do
-            różnych potrzeb inwestycyjnych – od drobnych prac tprzydomowych po
-            większe roboty budowlane. Dysponujemy nowoczesnym sprzętem, w tym
-            dużą i małą koparką oraz ubijarką.
-          </Typography>
-        </header>
+      <Container>
+        <div className="mt-24 pb-10">
+          <Breadcrumbs
+            items={[
+              { label: 'Strona główna', to: '/' },
+              { label: 'Realizacje' },
+            ]}
+          />
+        </div>
 
-        <GalleryGrid/>
-        <GalleryGrid/>
-        <GalleryGrid/>
+        <PageHeader
+          title="Realizacje"
+          description="Zobacz nasze realizacje w praktyce. Solidny sprzęt, doświadczenie i zaangażowanie w każdym projekcie."
+          transparent
+        />
 
-      </section>
-      <SectionContact/>
+        <section className="mt-24">
+          <RealizationsStats />
+        </section>
+
+        <section className="mb-32 mt-12">
+          <GalleryGrid />
+        </section>
+
+        <RealizationsContact
+          imageSrc={contactImage}
+          imageAlt="Koparka Exact podczas prac ziemnych"
+        />
+      </Container>
     </Layout>
   );
 }
