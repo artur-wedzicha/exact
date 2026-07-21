@@ -105,7 +105,7 @@ const AboutUs = () => {
             imgClassName="h-full w-full object-cover"
             placeholder="none"
             loading="eager"
-            formats={['auto', 'webp', 'avif']}
+            formats={['auto', 'webp']}
           />
         </div>
       </div>

@@ -7,7 +7,6 @@ const siteUrl = isGithubPagesBuild
 
 module.exports = {
   pathPrefix: isGithubPagesBuild ? githubPagesPathPrefix : '',
-  assetPrefix: isGithubPagesBuild ? githubPagesPathPrefix : '',
   siteMetadata: {
     title: `Exact - Usługi koparką i prace ziemne`,
     description: `Profesjonalne usługi koparką i kompleksowe prace ziemne: wykopy, niwelacje, fundamenty, drogi, odwodnienia, układanie kostki oraz transport materiałów budowlanych.`,
@@ -32,7 +31,7 @@ module.exports = {
       options: {
         name: `Exact`,
         short_name: `Exact`,
-        start_url: isGithubPagesBuild ? `${githubPagesPathPrefix}/` : `/`,
+        start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `minimal-ui`,

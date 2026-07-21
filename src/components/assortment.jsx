@@ -44,7 +44,7 @@ const Assortment = () => {
             imgClassName="h-full w-full object-cover"
             placeholder="none"
             loading="eager"
-            formats={['auto', 'webp', 'avif']}
+            formats={['auto', 'webp']}
           />
         </div>
 
@@ -100,7 +100,7 @@ const Assortment = () => {
                       imgClassName="object-contain"
                       placeholder="none"
                       loading="eager"
-                      formats={['auto', 'webp', 'avif']}
+                      formats={['auto', 'webp']}
                     />
                   ) : image === 'transport_icon' ? (
                     <StaticImage
@@ -110,7 +110,7 @@ const Assortment = () => {
                       imgClassName="object-contain"
                       placeholder="none"
                       loading="eager"
-                      formats={['auto', 'webp', 'avif']}
+                      formats={['auto', 'webp']}
                     />
                   ) : image === 'compactor_icon' ? (
                     <StaticImage
@@ -120,7 +120,7 @@ const Assortment = () => {
                       imgClassName="object-contain"
                       placeholder="none"
                       loading="eager"
-                      formats={['auto', 'webp', 'avif']}
+                      formats={['auto', 'webp']}
                     />
                   ) : image === 'assortment_icon' ? (
                     <StaticImage
@@ -130,7 +130,7 @@ const Assortment = () => {
                       imgClassName="object-contain"
                       placeholder="none"
                       loading="eager"
-                      formats={['auto', 'webp', 'avif']}
+                      formats={['auto', 'webp']}
                     />
                   ) : (
                     <Icon size={56} strokeWidth={1.8} />

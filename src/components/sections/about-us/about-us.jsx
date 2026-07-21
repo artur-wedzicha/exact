@@ -35,7 +35,7 @@ const SectionAboutUs = () => {
           placeholder="none"
           layout="constrained"
           loading="eager"
-          formats={['auto', 'webp', 'avif']}
+          formats={['auto', 'webp']}
           priority={true}
           className="w-full h-auto rounded-xl"
         />
