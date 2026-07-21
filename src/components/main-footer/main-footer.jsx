@@ -291,7 +291,7 @@ const MainFooter = () => {
                 imgClassName="object-contain"
                 placeholder="none"
                 loading="eager"
-                formats={['auto', 'webp', 'avif']}
+                formats={['auto', 'webp']}
               />
             </div>
 

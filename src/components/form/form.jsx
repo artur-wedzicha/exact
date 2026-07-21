@@ -31,7 +31,7 @@ const ContactForm = ({ variant = 'default' }) => {
 
   if (isRealizationsVariant) {
     const fieldClassName =
-      'h-16 rounded-[var(--button-border-radius)] border border-[var(--color-form-border)]m pl-14 pr-4 text-[15px] text-[var(--color-primary-text)] placeholder:text-[var(--color-muted-text)] focus:border-[var(--color-primary)] focus:outline-none';
+      'h-16 rounded-[var(--button-border-radius)] border border-[var(--color-form-border)] pl-14 pr-4 text-[15px] text-[var(--color-primary-text)] placeholder:text-[var(--color-muted-text)] focus:border-[var(--color-primary)] focus:outline-none';
 
     return (
       <div>

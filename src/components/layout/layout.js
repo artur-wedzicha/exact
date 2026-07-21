@@ -17,18 +17,46 @@ import bgImage from '../../images/bg.webp';
 const Layout = ({ children, mainStyle }) => {
   const location = useLocation();
   const pathPrefix = __PATH_PREFIX__ || '';
+  const stripPrefixedAssetPath = (assetPath) => {
+    if (!pathPrefix || typeof assetPath !== 'string') {
+      return assetPath;
+    }
+
+    return assetPath.startsWith(`${pathPrefix}/`)
+      ? assetPath.slice(pathPrefix.length)
+      : assetPath;
+  };
+  const normalizeBackgroundImage = (backgroundImage) => {
+    if (typeof backgroundImage !== 'string') {
+      return backgroundImage;
+    }
+
+    const urlMatch = backgroundImage.match(/^url\((['"]?)(.*)\1\)$/);
+    if (!urlMatch) {
+      return backgroundImage;
+    }
+
+    const normalizedAssetPath = stripPrefixedAssetPath(urlMatch[2]);
+    return `url(${normalizedAssetPath})`;
+  };
   const normalizedPathname = pathPrefix
     ? location.pathname.replace(pathPrefix, '') || '/'
     : location.pathname;
   const isHomePage = normalizedPathname === '/';
-  const computedMainStyle = isHomePage
+  const normalizedMainStyle = mainStyle?.backgroundImage
     ? {
-        backgroundImage: `url(${bgImage})`,
-        backgroundPosition: 'center top',
-        backgroundRepeat: 'no-repeat',
         ...mainStyle,
+        backgroundImage: normalizeBackgroundImage(mainStyle.backgroundImage),
       }
     : mainStyle;
+  const computedMainStyle = isHomePage
+    ? {
+        backgroundImage: `url(${stripPrefixedAssetPath(bgImage)})`,
+        backgroundPosition: 'center top',
+        backgroundRepeat: 'no-repeat',
+        ...normalizedMainStyle,
+      }
+    : normalizedMainStyle;
 
   return (
     <div className={`layout ${isHomePage ? 'layout--homepage' : ''}`}>

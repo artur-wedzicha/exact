@@ -22,7 +22,7 @@ export default function OfferExcavatorsPage() {
             placeholder="none"
             layout="constrained"
             loading={'eager'}
-            formats={['auto', 'webp', 'avif']}
+            formats={['auto', 'webp']}
             priority={true}
           />
           <Typography variant="p" className="mx-auto text-wrap text-center">
